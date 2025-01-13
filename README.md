@@ -18,6 +18,10 @@ The script `dependency.sh` sets up the environment for pandoc builds.
 - Other dependencies:
   - librsvg2-bin for SVG processing
 
+### Pandoc Template
+
+Customized pandoc templates for HTML and LaTeX.
+
 ### Pandoc Lua filters
 
 All Pandoc [Lua filters](https://pandoc.org/lua-filters.html) are located in `pandoc_filters`.
