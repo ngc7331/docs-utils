@@ -18,6 +18,29 @@ The script `dependency.sh` sets up the environment for pandoc builds.
 - Other dependencies:
   - librsvg2-bin for SVG processing
 
+### Pandoc Lua filters
+
+All Pandoc [Lua filters](https://pandoc.org/lua-filters.html) are located in `pandoc_filters`.
+
+- `remove_md_links.lua`:
+  
+  Remove links pointing to Markdown files (*.md), which is useful for one-file project.
+
+- `replace_variables.lua`:
+
+  Replace placeholders (e.g. `{{foo}}`) in Markdown with their corresponding value (e.g. `bar`) defined in metadata.
+
+  Example of metadata yaml:
+
+  ```yaml
+  replace_variables:
+    foo: bar
+  ```
+
+- `svg_to_pdf.lua`:
+  
+  Change referenced SVG format images to their corresponding PDF format images, which is useful for LaTeX builds.
+
 ### Resources
 
 - SVG and PDF format Logos of BOSC and XiangShan Community.
