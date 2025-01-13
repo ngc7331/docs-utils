@@ -2,6 +2,22 @@
 
 This repository contains the utilities and resources needed to build XiangShan's standardized Document.
 
+## Contents
+
+### Pandoc building environment dependency script
+
+The script `dependency.sh` sets up the environment for pandoc builds.
+
+- [Pandoc](https://pandoc.org/) and its filters:
+  - [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref) with corresponding version
+  - [include-files](https://github.com/pandoc-ext/include-files)
+- [TinyTeX](https://yihui.org/tinytex/) and some LaTeX Package:
+  - ctex, setspace, subfig, caption, textpos
+- Fonts:
+  - [Source Han Sans](https://github.com/adobe-fonts/source-han-sans/)
+- Other dependencies:
+  - librsvg2-bin for SVG processing
+
 ### Resources
 
 - SVG and PDF format Logos of BOSC and XiangShan Community.
