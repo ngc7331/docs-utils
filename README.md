@@ -45,6 +45,17 @@ All Pandoc [Lua filters](https://pandoc.org/lua-filters.html) are located in `pa
   
   Change referenced SVG format images to their corresponding PDF format images, which is useful for LaTeX builds.
 
+### MkDocs building environment requirements
+
+The script `requirements.sh` defines requirements for MkDocs building.
+
+- [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/)
+- Python-Markdown extensions:
+  - [markdown_grid_tables](https://gitlab.com/WillDaSilva/markdown_grid_tables)
+  - [markdown_captions](https://github.com/evidlo/markdown_captions)
+  - [caption](https://github.com/flywire/caption)
+  - The following Python-Markdown extensions
+
 ### Python-Markdown extensions
 
 All Python-Markdown [extensions](https://python-markdown.github.io/extensions/) are located in `mdx_extensions` folder and used in MkDocs builds.
