@@ -45,6 +45,37 @@ All Pandoc [Lua filters](https://pandoc.org/lua-filters.html) are located in `pa
   
   Change referenced SVG format images to their corresponding PDF format images, which is useful for LaTeX builds.
 
+### Python-Markdown extensions
+
+All Python-Markdown [extensions](https://python-markdown.github.io/extensions/) are located in `mdx_extensions` folder and used in MkDocs builds.
+
+- `remove_include.py`:
+
+  Remove Pandoc [include-files](https://github.com/pandoc-ext/include-files) style include code blocks.
+
+      ``` {.include}
+      file1.md
+      file2.md
+      ```
+
+- `remove_references.py`: 
+
+  Remove Pandoc [crossref](https://github.com/lierdakil/pandoc-crossref) with corresponding version style reference label like `[@sec:foobar]`
+
+
+- `replace_variables.py`: 
+  
+  Replace placeholders (e.g. `{{foo}}`) in Markdown with their corresponding value (e.g. `bar`) defined in extension config.
+
+  Example of `mkdocs.yml`:
+
+  ```yaml
+  markdown_extensions:
+    - xiangshan_docs_utils.replace_variables:
+        variables:
+          foo: "bar"
+  ```
+
 ### Resources
 
 - SVG and PDF format Logos of BOSC and XiangShan Community.
